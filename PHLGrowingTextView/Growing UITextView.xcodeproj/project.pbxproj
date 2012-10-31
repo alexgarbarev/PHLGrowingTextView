@@ -7,43 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840625EC163FD29200A29C91 /* textbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 840625EA163FD29200A29C91 /* textbox@2x.png */; };
-		840625ED163FD29200A29C91 /* textbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 840625EB163FD29200A29C91 /* textbox.png */; };
 		8470235D163EC2E400D4B2AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8470235C163EC2E400D4B2AE /* UIKit.framework */; };
 		8470235F163EC2E400D4B2AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8470235E163EC2E400D4B2AE /* Foundation.framework */; };
 		84702361163EC2E400D4B2AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84702360163EC2E400D4B2AE /* CoreGraphics.framework */; };
-		84702367163EC2E400D4B2AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84702365163EC2E400D4B2AE /* InfoPlist.strings */; };
-		84702369163EC2E400D4B2AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84702368163EC2E400D4B2AE /* main.m */; };
-		8470236D163EC2E400D4B2AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470236C163EC2E400D4B2AE /* AppDelegate.m */; };
-		8470236F163EC2E400D4B2AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8470236E163EC2E400D4B2AE /* Default.png */; };
-		84702371163EC2E400D4B2AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84702370163EC2E400D4B2AE /* Default@2x.png */; };
-		84702373163EC2E400D4B2AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84702372163EC2E400D4B2AE /* Default-568h@2x.png */; };
-		84702376163EC2E400D4B2AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84702375163EC2E400D4B2AE /* ViewController.m */; };
-		84702379163EC2E400D4B2AE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84702377163EC2E400D4B2AE /* ViewController.xib */; };
-		8470238F163EC6CC00D4B2AE /* PHLGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470238E163EC6CC00D4B2AE /* PHLGrowingTextView.m */; };
+		847266041640D1BB0067F683 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847265F81640D1BB0067F683 /* main.m */; };
+		847266051640D1BB0067F683 /* PHLGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847265FA1640D1BB0067F683 /* PHLGrowingTextView.m */; };
+		847266061640D1BB0067F683 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847265FC1640D1BB0067F683 /* ViewController.m */; };
+		847266071640D1BB0067F683 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847265FE1640D1BB0067F683 /* AppDelegate.m */; };
+		847266081640D1BB0067F683 /* textbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 847265FF1640D1BB0067F683 /* textbox@2x.png */; };
+		847266091640D1BB0067F683 /* textbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 847266001640D1BB0067F683 /* textbox.png */; };
+		8472660A1640D1BB0067F683 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 847266011640D1BB0067F683 /* Default-568h@2x.png */; };
+		8472660B1640D1BB0067F683 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 847266021640D1BB0067F683 /* Default.png */; };
+		8472660C1640D1BB0067F683 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 847266031640D1BB0067F683 /* Default@2x.png */; };
+		8472660E1640D1E10067F683 /* Growing UITextView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8472660D1640D1E10067F683 /* Growing UITextView-Info.plist */; };
+		847266141640D36F0067F683 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847266101640D36F0067F683 /* InfoPlist.strings */; };
+		847266151640D36F0067F683 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847266121640D36F0067F683 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		840625EA163FD29200A29C91 /* textbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textbox@2x.png"; sourceTree = "<group>"; };
-		840625EB163FD29200A29C91 /* textbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbox.png; sourceTree = "<group>"; };
 		84702358163EC2E400D4B2AE /* Growing UITextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Growing UITextView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8470235C163EC2E400D4B2AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8470235E163EC2E400D4B2AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84702360163EC2E400D4B2AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		84702364163EC2E400D4B2AE /* Growing UITextView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Growing UITextView-Info.plist"; sourceTree = "<group>"; };
-		84702366163EC2E400D4B2AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84702368163EC2E400D4B2AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8470236A163EC2E400D4B2AE /* Growing UITextView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Growing UITextView-Prefix.pch"; sourceTree = "<group>"; };
-		8470236B163EC2E400D4B2AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8470236C163EC2E400D4B2AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8470236E163EC2E400D4B2AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		84702370163EC2E400D4B2AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		84702372163EC2E400D4B2AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		84702374163EC2E400D4B2AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84702375163EC2E400D4B2AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		84702378163EC2E400D4B2AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		8470238D163EC6CC00D4B2AE /* PHLGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHLGrowingTextView.h; sourceTree = "<group>"; };
-		8470238E163EC6CC00D4B2AE /* PHLGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHLGrowingTextView.m; sourceTree = "<group>"; };
+		847265F71640D1BB0067F683 /* Growing UITextView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Growing UITextView-Prefix.pch"; path = "Growing UITextView/Growing UITextView-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		847265F81640D1BB0067F683 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Growing UITextView/main.m"; sourceTree = SOURCE_ROOT; };
+		847265F91640D1BB0067F683 /* PHLGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHLGrowingTextView.h; path = "Growing UITextView/PHLGrowingTextView.h"; sourceTree = SOURCE_ROOT; };
+		847265FA1640D1BB0067F683 /* PHLGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHLGrowingTextView.m; path = "Growing UITextView/PHLGrowingTextView.m"; sourceTree = SOURCE_ROOT; };
+		847265FB1640D1BB0067F683 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Growing UITextView/ViewController.h"; sourceTree = SOURCE_ROOT; };
+		847265FC1640D1BB0067F683 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Growing UITextView/ViewController.m"; sourceTree = SOURCE_ROOT; };
+		847265FD1640D1BB0067F683 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Growing UITextView/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		847265FE1640D1BB0067F683 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Growing UITextView/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		847265FF1640D1BB0067F683 /* textbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "textbox@2x.png"; path = "Growing UITextView/textbox@2x.png"; sourceTree = SOURCE_ROOT; };
+		847266001640D1BB0067F683 /* textbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textbox.png; path = "Growing UITextView/textbox.png"; sourceTree = SOURCE_ROOT; };
+		847266011640D1BB0067F683 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Growing UITextView/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		847266021640D1BB0067F683 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Growing UITextView/Default.png"; sourceTree = SOURCE_ROOT; };
+		847266031640D1BB0067F683 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Growing UITextView/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		8472660D1640D1E10067F683 /* Growing UITextView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Growing UITextView-Info.plist"; path = "Growing UITextView/Growing UITextView-Info.plist"; sourceTree = SOURCE_ROOT; };
+		847266111640D36F0067F683 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		847266131640D36F0067F683 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,15 +91,14 @@
 		84702362163EC2E400D4B2AE /* Growing UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				8470236B163EC2E400D4B2AE /* AppDelegate.h */,
-				8470236C163EC2E400D4B2AE /* AppDelegate.m */,
-				84702374163EC2E400D4B2AE /* ViewController.h */,
-				84702375163EC2E400D4B2AE /* ViewController.m */,
-				84702377163EC2E400D4B2AE /* ViewController.xib */,
-				8470238D163EC6CC00D4B2AE /* PHLGrowingTextView.h */,
-				8470238E163EC6CC00D4B2AE /* PHLGrowingTextView.m */,
-				840625EA163FD29200A29C91 /* textbox@2x.png */,
-				840625EB163FD29200A29C91 /* textbox.png */,
+				847265F91640D1BB0067F683 /* PHLGrowingTextView.h */,
+				847265FA1640D1BB0067F683 /* PHLGrowingTextView.m */,
+				847265FB1640D1BB0067F683 /* ViewController.h */,
+				847265FC1640D1BB0067F683 /* ViewController.m */,
+				847265FD1640D1BB0067F683 /* AppDelegate.h */,
+				847265FE1640D1BB0067F683 /* AppDelegate.m */,
+				847265FF1640D1BB0067F683 /* textbox@2x.png */,
+				847266001640D1BB0067F683 /* textbox.png */,
 				84702363163EC2E400D4B2AE /* Supporting Files */,
 			);
 			name = "Growing UITextView";
@@ -108,16 +108,26 @@
 		84702363163EC2E400D4B2AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84702364163EC2E400D4B2AE /* Growing UITextView-Info.plist */,
-				84702365163EC2E400D4B2AE /* InfoPlist.strings */,
-				84702368163EC2E400D4B2AE /* main.m */,
-				8470236A163EC2E400D4B2AE /* Growing UITextView-Prefix.pch */,
-				8470236E163EC2E400D4B2AE /* Default.png */,
-				84702370163EC2E400D4B2AE /* Default@2x.png */,
-				84702372163EC2E400D4B2AE /* Default-568h@2x.png */,
+				8472660F1640D36F0067F683 /* en.lproj */,
+				8472660D1640D1E10067F683 /* Growing UITextView-Info.plist */,
+				847266011640D1BB0067F683 /* Default-568h@2x.png */,
+				847266021640D1BB0067F683 /* Default.png */,
+				847266031640D1BB0067F683 /* Default@2x.png */,
+				847265F71640D1BB0067F683 /* Growing UITextView-Prefix.pch */,
+				847265F81640D1BB0067F683 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		8472660F1640D36F0067F683 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				847266101640D36F0067F683 /* InfoPlist.strings */,
+				847266121640D36F0067F683 /* ViewController.xib */,
+			);
+			name = en.lproj;
+			path = "Growing UITextView/en.lproj";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -170,13 +180,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84702367163EC2E400D4B2AE /* InfoPlist.strings in Resources */,
-				8470236F163EC2E400D4B2AE /* Default.png in Resources */,
-				84702371163EC2E400D4B2AE /* Default@2x.png in Resources */,
-				84702373163EC2E400D4B2AE /* Default-568h@2x.png in Resources */,
-				84702379163EC2E400D4B2AE /* ViewController.xib in Resources */,
-				840625EC163FD29200A29C91 /* textbox@2x.png in Resources */,
-				840625ED163FD29200A29C91 /* textbox.png in Resources */,
+				847266081640D1BB0067F683 /* textbox@2x.png in Resources */,
+				847266091640D1BB0067F683 /* textbox.png in Resources */,
+				8472660A1640D1BB0067F683 /* Default-568h@2x.png in Resources */,
+				8472660B1640D1BB0067F683 /* Default.png in Resources */,
+				8472660C1640D1BB0067F683 /* Default@2x.png in Resources */,
+				8472660E1640D1E10067F683 /* Growing UITextView-Info.plist in Resources */,
+				847266141640D36F0067F683 /* InfoPlist.strings in Resources */,
+				847266151640D36F0067F683 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,28 +198,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84702369163EC2E400D4B2AE /* main.m in Sources */,
-				8470236D163EC2E400D4B2AE /* AppDelegate.m in Sources */,
-				84702376163EC2E400D4B2AE /* ViewController.m in Sources */,
-				8470238F163EC6CC00D4B2AE /* PHLGrowingTextView.m in Sources */,
+				847266041640D1BB0067F683 /* main.m in Sources */,
+				847266051640D1BB0067F683 /* PHLGrowingTextView.m in Sources */,
+				847266061640D1BB0067F683 /* ViewController.m in Sources */,
+				847266071640D1BB0067F683 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84702365163EC2E400D4B2AE /* InfoPlist.strings */ = {
+		847266101640D36F0067F683 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84702366163EC2E400D4B2AE /* en */,
+				847266111640D36F0067F683 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		84702377163EC2E400D4B2AE /* ViewController.xib */ = {
+		847266121640D36F0067F683 /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84702378163EC2E400D4B2AE /* en */,
+				847266131640D36F0067F683 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
@@ -270,8 +281,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NAGrowingTextView/Growing UITextView-Prefix.pch";
-				INFOPLIST_FILE = "NAGrowingTextView/Growing UITextView-Info.plist";
+				GCC_PREFIX_HEADER = "Growing UITextView/Growing UITextView-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Growing UITextView/Growing UITextView-Info.plist";
 				PRODUCT_NAME = "Growing UITextView";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,8 +292,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NAGrowingTextView/Growing UITextView-Prefix.pch";
-				INFOPLIST_FILE = "NAGrowingTextView/Growing UITextView-Info.plist";
+				GCC_PREFIX_HEADER = "Growing UITextView/Growing UITextView-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Growing UITextView/Growing UITextView-Info.plist";
 				PRODUCT_NAME = "Growing UITextView";
 				WRAPPER_EXTENSION = app;
 			};
