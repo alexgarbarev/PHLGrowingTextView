@@ -8,12 +8,6 @@
 
 #import "ViewController.h"
 
-@interface ViewController () {
-    UIImageView *_imageView;
-}
-
-@end
-
 @implementation ViewController
 
 - (void)viewDidLoad
@@ -22,31 +16,21 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     PHLGrowingTextView *textView = [[PHLGrowingTextView alloc] init];
-    textView.frame = CGRectMake(100, 0, 200, 30);
+    textView.frame = CGRectMake(60, 200, 200, 25);
     textView.text = @"Abc\n\n\n";
     textView.contentInset = UIEdgeInsetsMake(5, 0, 0, 0);
     textView.delegate = self;
     textView.maxHeight = 200;
     textView.minHeight = 30;
     [self.view addSubview:textView];
-    
-    UIImage *backgroundImage = [[UIImage imageNamed:@"textbox.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(13, 13, 12, 12)];
-    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
-    _imageView.backgroundColor = [UIColor clearColor];
-    _imageView.image = backgroundImage;
-//    [self.view addSubview:_imageView];
 }
 
-- (void) textView:(PHLGrowingTextView *)textView willChangeHeight:(CGFloat)newHeight {
-    NSLog(@"willChangeHeight %f", newHeight);
+- (void) textView:(PHLGrowingTextView *)textView willChangeToHeight:(CGFloat)newHeight {
+    NSLog(@"willChangeToHeight %f", newHeight);
 }
 
-- (void) textViewDidChangeHeight:(PHLGrowingTextView *)textView {
+- (void) textView:(PHLGrowingTextView *)textView didChangeFromHeight:(CGFloat)oldHeight {
     NSLog(@"didChangeHeight %f", textView.frame.size.height);
-    
-    CGRect frame = _imageView.frame;
-    frame.size.height = textView.frame.size.height;
-    _imageView.frame = frame;
 }
 
 - (void)didReceiveMemoryWarning
