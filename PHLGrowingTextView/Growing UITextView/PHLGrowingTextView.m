@@ -17,7 +17,7 @@
 
 @implementation PHLGrowingTextView
 
-@synthesize delegate, minHeight, maxHeight, backgroundImage, adjustVerticalPosititon;
+@synthesize delegate, minHeight, maxHeight, backgroundImage, adjustVerticalPosititon, animationEnabled;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -39,9 +39,9 @@
 - (void) initialize {
     self.maxHeight = MAXFLOAT;
     self.minHeight = 0;
-    self.backgroundColor = [UIColor clearColor];
     self.backgroundImage = [[UIImage imageNamed:@"textbox.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(13, 13, 12, 12)];
     self.adjustVerticalPosititon = YES;
+    self.animationEnabled = YES;
     
     [self addObserver:self
            forKeyPath:@"frame"
@@ -85,6 +85,20 @@
     }
 }
 
+static __inline__ void PerformBlockAnimated(BOOL animated, CGFloat duration, void(^block)(void), void(^completion)(BOOL finished)) {
+    
+    if (animated) {
+        [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:block completion:completion];
+    } else {
+        if (block) {
+            block();
+        }
+        if (completion) {
+            completion(YES);
+        }
+    }
+}
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if([keyPath isEqualToString:@"contentSize"]) {
         
@@ -104,25 +118,24 @@
             
             CGFloat oldHeight = self.frame.size.height;
             
-            [UIView animateWithDuration:0.1
-                                  delay:0
-                                options:UIViewAnimationOptionAllowUserInteraction
-                             animations:^{
-                                 
-                                 _isAnimating = TRUE;
-                                 
-                                 CGRect frame = self.frame;
-                                 frame.size.height = expectedHeight;
-                                 if(self.adjustVerticalPosititon) {
-                                     frame.origin.y += (oldHeight - expectedHeight);
-                                 }
-                                 self.frame = frame;
-                                 
-                             } completion:^(BOOL finished) {
-                                 _isAnimating = FALSE;
-                                 if([self.delegate respondsToSelector:@selector(textView:didChangeFromHeight:)])
-                                     [self.delegate textView:self didChangeFromHeight:oldHeight];
-                             }];
+            PerformBlockAnimated(self.animationEnabled, 0.1, ^{
+                
+                _isAnimating = TRUE;
+                
+                CGRect frame = self.frame;
+                frame.size.height = expectedHeight;
+                if(self.adjustVerticalPosititon) {
+                    frame.origin.y += (oldHeight - expectedHeight);
+                }
+                self.frame = frame;
+                
+            }, ^(BOOL finished) {
+                
+                _isAnimating = FALSE;
+                if([self.delegate respondsToSelector:@selector(textView:didChangeFromHeight:)])
+                    [self.delegate textView:self didChangeFromHeight:oldHeight];
+                
+            });
         }
     }
     else if([keyPath isEqualToString:@"frame"]) {

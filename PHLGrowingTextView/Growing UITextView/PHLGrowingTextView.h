@@ -26,5 +26,7 @@
 @property (nonatomic, assign) BOOL adjustVerticalPosititon;
 @property (nonatomic, retain) UIImage *backgroundImage;
 
+@property (nonatomic, assign) BOOL animationEnabled;
+
 @end
 
